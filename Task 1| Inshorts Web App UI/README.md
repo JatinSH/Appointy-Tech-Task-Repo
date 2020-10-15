@@ -7,3 +7,5 @@ To see the response, follow these steps:
    4) Press Ctrl + Shift + M to switch to mobile mode.
    5) Reload the page once.
    6) Sipwe left or right and it will work.
+   
+A demo video is also attached in this folder to show the working of the swipe feature.
