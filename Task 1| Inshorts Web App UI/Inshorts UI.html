@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  $("#swipe").on("swipeleft",function(){
+     alert("You swiped left!");
+    var x = document.getElementById("news1");
+    var y = document.getElementById("news2");
+    if (y.style.display === "none") {
+      y.style.display = "block";
+      x.style.display = "none";
+    }    
+  });                       
+});
+
+$(document).on("pagecreate","#pageone",function(){
+  $("#swipe").on("swiperight",function(){
+     alert("You swiped right!");
+    var y = document.getElementById("news1");
+    var x = document.getElementById("news2");
+    if (y.style.display === "none") {
+      y.style.display = "block";
+      x.style.display = "none";
+    }    
+  });                       
+});
+</script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" width:auto height: auto; data-role="header">
+  <span class="w3-left w3-w3-padding" style="color:cyan;"><h4><</h4></span>
+  <span class="w3-left w3-w3-padding"> <h4 style="color:gray;"> Discover</h4></span>
+  <!-- <span class="w3-center w3-w3-padding"><h4><b> My Feed </b></h4></span> -->
+  <div class="w3-display-middle"><h4><b>My Feed</b></h4></div>
+  <span class="w3-right w3-w3-padding" ><h4> > </h4></span>
+ </header>
+
+
+
+
+  <div class="w3-container w3-white w3-center w3-padding-32" data-role="main" class="ui-content" id="swipe">
+  <div id="news1"> 
+   <img src="https://cdn.mos.cms.futurecdn.net/nxCq65Gbz3br6BymFarVmW.jpg"  width:auto;
+  height: auto; object-fit: cover; alt="Me" class="w3-image" >
+    <div class="w3-content w3-justify"  style="max-width:600px">
+      <h4 style="color:black;"><b> Viral image shows scale of melting ice in Greenland</b></h4>
+      <p style="color:gray">A photo showing sled dogs wading through water ankle-deep on top of a melting ice sheet in Greenland has gone viral. The picture taken by Steffen Olsen from the Centre for Ocean and Ice at the Danish Meteorological Institute shows the scale of melting ice in Greenland. Olsen said the ice sheet beneath the water was 1.2 metres thick.</p>
+      <h5 style="color:gray;">short by Ankush Verma</h5>
+      </div>
+  </div>
+  
+  <div id="news2" style="display: none;"> 
+   <img src="https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2020/10_oct/15_thu/img_1602747238241_322.jpg"  width:auto;
+  height: auto; object-fit: cover; alt="Me" class="w3-image" >
+    <div class="w3-content w3-justify"  style="max-width:600px">
+      <h4 style="color:black;"><b> Weekly ratings for news channels paused for at least 2 months amid fake TRP scam</b></h4>
+      <p style="color:gray">Ratings agency BARC (Broadcast Audience Research Council) has decided to pause weekly ratings for news channels for 8-12 weeks as it reviews its system amid fake ratings scam. This would cover all Hindi, regional, English news and business news channels with immediate effect. BARC will, however, continue to release weekly audience estimates for news genre by state and language.</p>
+      <p style="color:gray;" style="font-size:10px;">short by Daisy Mowke</p>
+      </div>
+  </div>
+  </div>
+   
+
+
+
+
+
+  <footer class="w3-container w3-padding-32 w3-white" data-role="footer">
+     
+      <div class="w3-row-padding w3-center">
+      <div class="w3-display-bottomleft">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Basic_green_dot.png" alt="Me" class="w3-image" width="20" height="20">
+        <h6 style="color:gray;">   Relevance</h6>
+       
+      </div>
+    
+      <div class="w3-display-bottommiddle">
+      <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Share-icon.png" alt="Me" class="w3-image " width="20" height="20">
+        <h6 style="color:gray;">Share</h6>
+        
+      </div>
+
+      <div class="w3-display-bottomright">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/bookmark-1773018-1508960.png" alt="Me" class="w3-image" width="20" height="20">
+        <h6 style="color:gray;">Bookmark</h6>
+      </div>
+     </div>
+    
+  </footer>
+</div> 
+
+</body>
+</html>
