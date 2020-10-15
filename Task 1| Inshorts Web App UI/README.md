@@ -9,3 +9,8 @@ To see the response, follow these steps:
    6) Sipwe left or right and it will work.
    
 A demo video is also attached in this folder to show the working of the swipe feature.
+
+A drive link to the same video is provided here : 
+
+https://drive.google.com/file/d/1F0r-g7QZEHyb1KMJgtV3C1xuJeAQlfjm/view?usp=sharing
+
